@@ -3,4 +3,46 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+nav {
+  padding: 0 100px;
+}
+nav .nav-container {
+  padding: 20px 0;
+  width: auto;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav-container .logo {
+  cursor: pointer;
+}
+nav .nav-container .nav-menu {
+  display: flex;
+  gap: 30px;
+  align-self: stretch;
+}
+nav .nav-container .nav-menu .menu {
+  color: hsl(233, 8%, 62%);
+  cursor: pointer;
+}
+nav .nav-container .nav-menu .menu:hover, nav .nav-container .nav-menu .menu:active {
+  color: hsl(233, 26%, 24%);
+  border-bottom: 3px solid black;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+}
+nav .nav-container .btn {
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+}
+nav .nav-container .btn:hover, nav .nav-container .btn:active {
+  background-image: linear-gradient(to right, rgba(49, 211, 92, 0.8), rgba(43, 183, 218, 0.8));
 }/*# sourceMappingURL=style.css.map */

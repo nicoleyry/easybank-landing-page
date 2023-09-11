@@ -1,0 +1,14 @@
+@use "./variables" as var;
+
+@mixin btn() {
+	cursor: pointer;
+	color: var.$color-white;
+	padding: 10px 20px;
+	border-radius: 30px;
+	background-image: linear-gradient(to right, var.$color-lime-green, var.$color-bright-cyan);
+
+	&:hover,
+	&:active {
+		background-image: linear-gradient(to right, rgba(var.$color-lime-green, .8), rgba(var.$color-bright-cyan, .8));
+	}
+}
