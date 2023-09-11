@@ -46,6 +46,7 @@ nav {
 
 			& .menu {
 				cursor: pointer;
+				font-weight: 400;
 
 				&:hover,
 				&:active {
@@ -215,6 +216,12 @@ main {
 					& .title {
 						color: var.$color-dark-blue;
 						font-size: 16px;
+						cursor: pointer;
+
+						&:hover,
+						&:active {
+							color: var.$color-green;
+						}
 					}
 	
 					& .desc {
@@ -222,6 +229,73 @@ main {
 					}
 				}
 
+			}
+		}
+	}
+}
+
+footer {
+    background: var.$color-dark-blue;
+	color: var.$color-white;
+	padding: 70px 0;
+
+	@include mix.body-padding();
+
+	& .footer-container {
+		display: grid;
+		grid-template-columns: 25% 15% 15% auto;
+		gap: 30px;
+		min-height: 100px;
+
+		& .column {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			&-1 {
+				& .logo {
+					cursor: pointer;
+				}
+				
+				& .social-block {
+					display: flex;
+					gap: 15px;
+
+					& svg {
+						cursor: pointer;
+
+						&:hover path,
+						&:active path {
+							fill: var.$color-green;
+						}
+					}
+				}
+			}
+
+			& .menu {
+				font-size: 14px;
+				font-weight: 700;
+				cursor: pointer;
+				color: var.$color-white;
+
+				&:hover,
+				&:active {
+					color: var.$color-green;
+				}
+			}
+
+			&-4 {
+				text-align: right;
+				align-items: flex-end;
+
+				& .btn {
+					@include mix.btn();
+				}
+
+				& .copyright {
+					font-size: 14px;
+					color: var.$color-grayish-blue;
+				}
 			}
 		}
 	}

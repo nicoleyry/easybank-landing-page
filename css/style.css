@@ -42,6 +42,7 @@ nav .nav-container .nav-menu {
 }
 nav .nav-container .nav-menu .menu {
   cursor: pointer;
+  font-weight: 400;
 }
 nav .nav-container .nav-menu .menu:hover, nav .nav-container .nav-menu .menu:active {
   color: hsl(233, 26%, 24%);
@@ -204,7 +205,71 @@ main .main-bottom .articles-block .article .text-box .author {
 main .main-bottom .articles-block .article .text-box .title {
   color: hsl(233, 26%, 24%);
   font-size: 16px;
+  cursor: pointer;
+}
+main .main-bottom .articles-block .article .text-box .title:hover, main .main-bottom .articles-block .article .text-box .title:active {
+  color: hsl(171, 34%, 42%);
 }
 main .main-bottom .articles-block .article .text-box .desc {
   font-size: 14px;
+}
+
+footer {
+  background: hsl(233, 26%, 24%);
+  color: hsl(0, 0%, 100%);
+  padding: 70px 0;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+footer .footer-container {
+  display: grid;
+  grid-template-columns: 25% 15% 15% auto;
+  gap: 30px;
+  min-height: 100px;
+}
+footer .footer-container .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .footer-container .column-1 .logo {
+  cursor: pointer;
+}
+footer .footer-container .column-1 .social-block {
+  display: flex;
+  gap: 15px;
+}
+footer .footer-container .column-1 .social-block svg {
+  cursor: pointer;
+}
+footer .footer-container .column-1 .social-block svg:hover path, footer .footer-container .column-1 .social-block svg:active path {
+  fill: hsl(171, 34%, 42%);
+}
+footer .footer-container .column .menu {
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
+}
+footer .footer-container .column .menu:hover, footer .footer-container .column .menu:active {
+  color: hsl(171, 34%, 42%);
+}
+footer .footer-container .column-4 {
+  text-align: right;
+  align-items: flex-end;
+}
+footer .footer-container .column-4 .btn {
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
+  padding: 10px 20px;
+  border-radius: 30px;
+  display: inline-block;
+  background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+}
+footer .footer-container .column-4 .btn:hover, footer .footer-container .column-4 .btn:active {
+  background-image: linear-gradient(to right, rgba(49, 211, 92, 0.8), rgba(43, 183, 218, 0.8));
+}
+footer .footer-container .column-4 .copyright {
+  font-size: 14px;
+  color: hsl(233, 8%, 62%);
 }/*# sourceMappingURL=style.css.map */
