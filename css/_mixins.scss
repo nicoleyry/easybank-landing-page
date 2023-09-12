@@ -4,9 +4,14 @@
 	padding-left: 100px;
 	padding-right: 100px;
 
-	@media screen and (max-width: var.$breakpoint-m) {
+	@media screen and (max-width: var.$breakpoint-l) {
 		padding-left: 80px;
 		padding-right: 80px;
+	}
+
+	@media screen and (max-width: var.$breakpoint-m) {
+		padding-left: 30px;
+		padding-right: 30px;
 	}
 }
 

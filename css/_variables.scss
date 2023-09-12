@@ -8,8 +8,8 @@ $color-white: hsl(0, 0%, 100%);
 $color-green: hsl(171, 34%, 42%);
 $color-black: hsl(0, 0%, 0%);
 
-$navH: 60px;
-
 // Media Queries
-$breakpoint-m: 900px;
-$breakpoint-s: 700px;
+$breakpoint-l: 900px;
+$breakpoint-m: 800px;
+$breakpoint-s: 650px;
+$breakpoint-xs: 400px;
