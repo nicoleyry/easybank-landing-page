@@ -42,8 +42,20 @@
 					<p class="menu">Careers</p>
 				</div>
 				<p class="btn">Request Invite</p>
+				<img class="hamburger show" id="menu-open" src="./images/icon-hamburger.svg" alt="burger menu">
+				<img class="hamburger" id="menu-close" src="./images/icon-close.svg" alt="close menu">
 			</div>
+
 		</nav>
+		<div class="menu-cover" id="menu-cover">
+			<div class="menu-container">
+				<p class="nav-menu">Home</p>
+				<p class="nav-menu">About</p>
+				<p class="nav-menu">Contact</p>
+				<p class="nav-menu">Blog</p>
+				<p class="nav-menu">Careers</p>
+			</div>
+		</div>
 		<main>
 			<div class="main-top">
 				<div class="main-container">
@@ -60,7 +72,9 @@
 					</div>
 				</div>
 			</div>
-			<img class="mockups" src="./images/image-mockups.png" alt="mockups" srcset="" />
+			<div class="mockup-container">
+				<img class="mockups" src="./images/image-mockups.png" alt="mockups" srcset="" />
+			</div>
 			<div class="main-middle">
 				<h1 class="headline">Why choose Easybank?</h1>
 				<p class="desc">
@@ -71,7 +85,7 @@
 					<div class="choice">
 						<img class="icon" src="./images/icon-online.svg" alt="Online Banking" />
 						<p class="title">Online Banking</p>
-						<p>
+						<p class="content">
 							Our modern web and mobile applications allow you to keep track of your finances wherever you
 							are in the world.
 						</p>
@@ -79,7 +93,7 @@
 					<div class="choice">
 						<img class="icon" src="./images/icon-budgeting.svg" alt="Simple Budgeting" />
 						<p class="title">Simple Budgeting</p>
-						<p>
+						<p class="content">
 							Simple Budgeting See exactly where your money goes each month. Receive notifications when
 							you're close to hitting your limits.
 						</p>
@@ -87,7 +101,7 @@
 					<div class="choice">
 						<img class="icon" src="./images/icon-onboarding.svg" alt="Fast Onboarding" />
 						<p class="title">Fast Onboarding</p>
-						<p>
+						<p class="content">
 							We don't do branches. Open your account in minutes online and start taking control of your
 							finances right away.
 						</p>
@@ -95,7 +109,7 @@
 					<div class="choice">
 						<img class="icon" src="./images/icon-api.svg" alt="Open API" />
 						<p class="title">Open API</p>
-						<p>
+						<p class="content">
 							Manage your savings, investments, pension, and much more from one account. Tracking your
 							money has never been easier.
 						</p>
@@ -234,5 +248,7 @@
 			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
 			Coded by <a href="#">Your Name Here</a>.
 		</div> -->
+
+		<script src="js/script.js"></script>
 	</body>
 </html>

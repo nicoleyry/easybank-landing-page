@@ -3,6 +3,11 @@
 @mixin body-padding() {
 	padding-left: 100px;
 	padding-right: 100px;
+
+	@media screen and (max-width: var.$breakpoint-m) {
+		padding-left: 80px;
+		padding-right: 80px;
+	}
 }
 
 @mixin btn() {
